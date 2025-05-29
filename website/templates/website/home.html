@@ -58,29 +58,18 @@
             z-index: 1000;
             box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
             transition: var(--transition);
+            margin-top:-10px;
         }
         
         header.scrolled {
             padding: 1.2rem 5%;
             box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
         }
-        
-        .logo{
-            font-size: 2.2rem;
-            font-weight: 700;
-            background: linear-gradient(to right, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .logo-icon {
-            font-size: 1.8rem;
-        }
         .logo img{
-            height:120px;
+            height:90px;
+            width: auto;
+            margin:auto;
+            margin-bottom:-15px;
         }
         nav ul {
             display: flex;
@@ -1068,7 +1057,7 @@
     <!-- Header with Mobile Menu -->
     <header id="header">
         <div class="logo">
-            <img src="{% static 'images/AurbientT.png' %}" alt="Aurbient Technologies Logo" style="height: 40px;">
+            <img src="{% static 'images/AurbientT.png' %}" alt="Aurbient Technologies Logo">
         </div>
         
         <button class="mobile-menu-btn" id="mobileMenuBtn">

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3k$^6&(+l2(2r^vck4uba20-5k&3%^8x*(#e($m*$bf1eu29gs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["aurbienttech.onrender.com"]
+ALLOWED_HOSTS = ["aurbienttech.onrender.com",'127.0.0.1']
 
 
 # Application definition
@@ -116,6 +116,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  # This is where your static files will be stored
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"  # For collecting static files during deployment
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
