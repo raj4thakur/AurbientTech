@@ -18,3 +18,5 @@ def casestudy(request):
     return render(request,'website/case-studies.html')
 def portfolio(request):
     return render(request,'website/pop.html')
+def article1(request):
+    return render(request,"website/A1.html")
