@@ -37,8 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
+    'meta',
+    'robots',
     "website",
 ]
+SITE_ID = 1
+ROBOTS_USE_SITEMAP = True
+ROBOTS_USE_HOST = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -2,16 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load schema %}
+    <script type="application/ld+json">
+        {% aurbient_organization_schema %}
+    </script>
+
+    {% include "meta/meta.html" %}
+    <meta name="description" content="Aurbient Technology - Leading AI consulting firm specializing in artificial intelligence strategy, implementation, and optimization.">
+    <meta name="keywords" content="AI consulting, artificial intelligence, machine learning, technology consulting, AI solutions">
+    <meta property="og:title" content="Aurbient Technology | AI Consulting Services">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aurbient Technologies provides strategic AI consulting and implementation that transforms businesses through data-driven intelligence.">
-    <meta property="og:title" content="Aurbient Technologies - AI Strategy & Consulting">
     <meta property="og:description" content="Transform your business with Aurbient's expert AI strategies and solutions.">
     <meta property="og:image" content="{% static 'images/AurbientT.png' %}">
     <meta property="og:type" content="website">
     <title>Aurbient Technologies | AI Strategy & Consulting</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         /* Client Reviews Section */
 .client-reviews {
