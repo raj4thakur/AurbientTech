@@ -13,6 +13,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Client Reviews Section */
+.client-reviews {
+    padding: 6rem 5%;
+    background-color: white;
+}
+
+.review-container {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.submitted-reviews {
+    display: grid;
+    gap: 2rem;
+    align-content: start;
+}
+
+.review-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(125, 91, 166, 0.1);
+    position: relative;
+}
+
+.review-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary), var(--accent));
+    border-radius: 5px 0 0 5px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reviewer-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.reviewer-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.review-rating {
+    color: var(--warning);
+    font-size: 1.2rem;
+}
+
+.review-content {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.review-project {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(125, 91, 166, 0.1);
+    color: var(--primary);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.review-form-container {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(125, 91, 166, 0.1);
+}
+
+.review-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.star-rating {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.star-rating i {
+    font-size: 1.5rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.star-rating i.active {
+    color: var(--warning);
+}
+
+@media (max-width: 992px) {
+    .review-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+    <style>
         :root {
             --primary: #6e48aa;
             --secondary: #9d50bb;
@@ -1200,9 +1316,6 @@
             </div>
         </div>
     </section>
-
-    
-
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="section-title">
@@ -1335,7 +1448,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="section-title">
