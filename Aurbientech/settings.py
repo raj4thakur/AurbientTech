@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
     'django.contrib.sites',
-    'meta',
-    'robots',
+    # 'meta',
+    # 'robots',
     "website",
 ]
 SITE_ID = 1
