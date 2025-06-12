@@ -5,4 +5,3 @@ whitenoise
 pymongo[srv]
 pytz
 dnspython
-torchmeta

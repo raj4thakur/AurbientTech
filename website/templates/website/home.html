@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load schema %}
+    {% comment %} {% load schema %}
     <script type="application/ld+json">
         {% aurbient_organization_schema %}
     </script>
 
-    {% include "meta/meta.html" %}
+    {% include "meta/meta.html" %} {% endcomment %}
     <meta name="description" content="Aurbient Technology - Leading AI consulting firm specializing in artificial intelligence strategy, implementation, and optimization.">
     <meta name="keywords" content="AI consulting, artificial intelligence, machine learning, technology consulting, AI solutions">
     <meta property="og:title" content="Aurbient Technology | AI Consulting Services">
