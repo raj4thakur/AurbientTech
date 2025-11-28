@@ -30,4 +30,5 @@ urlpatterns = [
     path('', include('website.urls')),
     path('ai-readiness/', include('assessments.urls', namespace='assessments')),
     path("career/", include("Career.urls", namespace="career")),
+    path('ai-interview/', include('ai_interview.urls', namespace='ai_interview')),
 ]

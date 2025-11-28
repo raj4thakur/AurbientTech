@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "website",
     "assessments",
     "Career",
+    "ai_interview",
 ]
 SITE_ID = 1
 ROBOTS_USE_SITEMAP = True
