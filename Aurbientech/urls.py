@@ -28,4 +28,6 @@ urlpatterns = [
     # path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     # path('robots.txt', include('robots.urls')),
     path('', include('website.urls')),
+    path('ai-readiness/', include('assessments.urls', namespace='assessments')),
+    path("career/", include("Career.urls", namespace="career")),
 ]
