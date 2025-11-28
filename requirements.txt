@@ -6,3 +6,4 @@ pymongo[srv]
 pytz
 dnspython
 meta
+openai
