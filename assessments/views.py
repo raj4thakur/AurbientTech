@@ -13,7 +13,7 @@ from reportlab.pdfgen import canvas
 
 from .models import Assessment
 
-openai.api_key = os.environ.get("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")
+openai.api_key = os.environ.get("API")
 MODEL_NAME = os.environ.get("OPENAI_MODEL", "gpt-4o-nano")  # change if required
 
 # Pillars and questions (same as earlier)
